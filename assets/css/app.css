@@ -1,0 +1,18 @@
+/* ==========================================================
+   CAREERCONNECT
+   MASTER STYLESHEET
+========================================================== */
+
+@import url("theme.css");
+@import url("layout.css");
+@import url("components.css");
+@import url("forms.css");
+@import url("tables.css");
+@import url("responsive.css");
+@import url("dashboard.css");
+@import url("auth.css");
+@import url("company-dashboard.css");
+
+@import url("student.css");
+@import url("company.css");
+@import url("admin.css");

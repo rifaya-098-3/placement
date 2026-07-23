@@ -1,0 +1,191 @@
+/* =====================================================
+   CAREERCONNECT DESIGN SYSTEM
+   Theme
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{
+
+/* =====================================================
+   COLORS
+===================================================== */
+
+--bg:#0A0D12;
+--sidebar:#0E1218;
+--card:#131822;
+--surface:#181F2A;
+
+--border:#232B38;
+
+/* Accent (signature amber, the "career path" color) */
+
+--primary:#D9A34C;
+--primary-hover:#EBC077;
+--primary-soft:rgba(217,163,76,.12);
+
+/* Secondary accent (signature teal, used for connectors/links) */
+
+--accent:#33D6BD;
+--accent-soft:rgba(51,214,189,.12);
+
+/* Text */
+
+--white:#FFFFFF;
+--text:#EAEDF2;
+--text-light:#B7BFCC;
+--text-muted:#7C879A;
+
+/* Status */
+
+--success:#22C55E;
+--danger:#EF4444;
+--warning:#F59E0B;
+--info:#3B82F6;
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
+
+--font-display:'Space Grotesk','Inter',sans-serif;
+--font-body:'Inter',sans-serif;
+
+/* =====================================================
+   SHADOWS
+===================================================== */
+
+--shadow-sm:0 4px 10px rgba(0,0,0,.18);
+--shadow:0 10px 30px rgba(0,0,0,.30);
+--shadow-lg:0 24px 60px rgba(0,0,0,.42);
+--shadow-glow:0 0 0 1px rgba(217,163,76,.25),0 20px 50px rgba(217,163,76,.10);
+
+/* =====================================================
+   BORDER RADIUS
+===================================================== */
+
+--radius-sm:10px;
+--radius:16px;
+--radius-lg:22px;
+--radius-round:999px;
+
+/* =====================================================
+   TRANSITIONS
+===================================================== */
+
+--transition:.30s ease;
+--transition-slow:.6s cubic-bezier(.16,.8,.24,1);
+
+/* =====================================================
+   SPACING
+===================================================== */
+
+--space-1:6px;
+--space-2:12px;
+--space-3:18px;
+--space-4:24px;
+--space-5:32px;
+--space-6:48px;
+
+}
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:var(--font-body);
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family:var(--font-display);
+letter-spacing:-.01em;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+transition:var(--transition);
+}
+
+button{
+font-family:inherit;
+cursor:pointer;
+border:none;
+outline:none;
+transition:var(--transition);
+}
+
+input,
+textarea,
+select{
+font-family:inherit;
+outline:none;
+}
+
+ul{
+list-style:none;
+}
+
+/* =====================================================
+   ACCESSIBLE FOCUS
+===================================================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible{
+outline:2px solid var(--primary);
+outline-offset:3px;
+}
+
+/* =====================================================
+   MOTION UTILITIES (scroll reveal, used by app.js)
+===================================================== */
+
+.reveal{
+opacity:0;
+transform:translateY(28px);
+transition:opacity .8s cubic-bezier(.16,.8,.24,1),transform .8s cubic-bezier(.16,.8,.24,1);
+}
+
+.reveal.in-view{
+opacity:1;
+transform:translateY(0);
+}
+
+.reveal-delay-1{transition-delay:.08s;}
+.reveal-delay-2{transition-delay:.16s;}
+.reveal-delay-3{transition-delay:.24s;}
+.reveal-delay-4{transition-delay:.32s;}
+.reveal-delay-5{transition-delay:.40s;}
+.reveal-delay-6{transition-delay:.48s;}
+
+@media (prefers-reduced-motion: reduce){
+*,*::before,*::after{
+animation-duration:0.001ms !important;
+animation-iteration-count:1 !important;
+transition-duration:0.001ms !important;
+scroll-behavior:auto !important;
+}
+.reveal{opacity:1;transform:none;}
+}

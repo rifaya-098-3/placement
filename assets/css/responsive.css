@@ -1,0 +1,314 @@
+/* ==========================================================
+   CAREERCONNECT
+   RESPONSIVE SYSTEM
+========================================================== */
+
+
+/* ==========================================================
+   LARGE LAPTOPS
+========================================================== */
+
+@media (max-width:1400px){
+
+.hero-card{
+    padding:32px;
+}
+
+.hero-content h1{
+    font-size:36px;
+}
+
+}
+
+
+/* ==========================================================
+   LAPTOP
+========================================================== */
+
+@media (max-width:1200px){
+
+.dashboard-grid{
+    grid-template-columns:1fr;
+}
+
+.stats-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hero-card{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.hero-progress{
+    width:100%;
+}
+
+.search-box{
+    width:300px;
+}
+
+.page-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.table{
+    min-width:800px;
+}
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+.sidebar{
+
+    width:90px;
+    padding:25px 12px;
+
+}
+
+.logo h2,
+.sidebar-menu span{
+
+    display:none;
+
+}
+
+.logo{
+
+    justify-content:center;
+
+}
+
+.sidebar-menu a{
+
+    justify-content:center;
+    padding:14px;
+
+}
+
+.sidebar-menu a i{
+
+    margin:0;
+    font-size:22px;
+
+}
+
+.main{
+
+    margin-left:90px;
+    width:calc(100% - 90px);
+
+}
+
+.topbar{
+
+    flex-wrap:wrap;
+
+}
+
+.search-box{
+
+    width:100%;
+
+}
+
+.profile-info{
+
+    display:none;
+
+}
+
+.form-row{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+.main{
+
+    margin-left:0;
+    width:100%;
+    padding:20px;
+
+}
+
+.sidebar{
+
+    position:fixed;
+    left:-270px;
+    width:270px;
+
+}
+
+.sidebar.active{
+
+    left:0;
+
+}
+
+.topbar{
+
+    flex-direction:column;
+    align-items:stretch;
+    gap:18px;
+
+}
+
+.top-right{
+
+    justify-content:space-between;
+
+}
+
+.hero-card{
+
+    padding:25px;
+
+}
+
+.hero-content h1{
+
+    font-size:28px;
+
+}
+
+.hero-btns{
+
+    flex-direction:column;
+
+}
+
+.hero-btns .btn{
+
+    width:100%;
+
+}
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.card,
+.widget,
+.jobs-section,
+.form-card{
+
+    padding:20px;
+
+}
+
+.job-card{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+
+}
+
+.apply-btn{
+
+    width:100%;
+    text-align:center;
+
+}
+
+.table-header{
+
+    flex-direction:column;
+    align-items:flex-start;
+
+}
+
+.table-actions{
+
+    width:100%;
+
+}
+
+.table-actions .btn{
+
+    width:100%;
+
+}
+
+.page-header h1{
+
+    font-size:28px;
+
+}
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width:576px){
+
+.hero-content h1{
+
+    font-size:24px;
+
+}
+
+.hero-progress{
+
+    padding:20px;
+
+}
+
+.circle{
+
+    width:95px;
+    height:95px;
+
+    font-size:22px;
+
+}
+
+.search-box{
+
+    height:48px;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.icon-btn{
+
+    width:42px;
+    height:42px;
+
+}
+
+.table{
+
+    min-width:650px;
+
+}
+
+}

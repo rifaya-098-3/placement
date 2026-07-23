@@ -1,0 +1,360 @@
+/* ==========================================================
+   CAREERCONNECT
+   TABLE SYSTEM
+========================================================== */
+
+
+/* ==========================
+        TABLE CARD
+========================== */
+
+.table-card{
+
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    box-shadow:var(--shadow-sm);
+    overflow:hidden;
+
+}
+
+
+/* ==========================
+        TABLE HEADER
+========================== */
+
+.table-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+
+    padding:24px 28px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.table-header h2{
+
+    font-size:24px;
+    font-weight:700;
+    color:var(--white);
+
+}
+
+.table-header p{
+
+    color:var(--text-muted);
+    font-size:14px;
+
+}
+
+
+/* ==========================
+        TABLE ACTIONS
+========================== */
+
+.table-actions{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+
+}
+
+
+/* ==========================
+        TABLE WRAPPER
+========================== */
+
+.table-responsive{
+
+    width:100%;
+    overflow-x:auto;
+
+}
+
+
+/* ==========================
+        TABLE
+========================== */
+
+.table{
+
+    width:100%;
+    border-collapse:collapse;
+    min-width:900px;
+    background:transparent;
+    --bs-table-bg:transparent;
+    --bs-table-color:var(--text);
+    --bs-table-striped-bg:rgba(255,255,255,.03);
+    --bs-table-striped-color:var(--text);
+    --bs-table-hover-bg:rgba(214,179,106,.06);
+    --bs-table-hover-color:var(--text);
+    --bs-table-border-color:var(--border);
+
+}
+
+.table thead,
+.table tbody,
+.table tr{
+
+    background:transparent;
+
+}
+
+.table thead{
+
+    background:#181C20;
+
+}
+
+.table th{
+
+    padding:18px 22px;
+
+    text-align:left;
+
+    color:var(--primary);
+
+    font-size:14px;
+    font-weight:600;
+
+    border-bottom:1px solid var(--border);
+
+    white-space:nowrap;
+
+}
+
+.table td{
+
+    padding:18px 22px;
+
+    color:var(--text);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr{
+
+    transition:var(--transition);
+
+}
+
+.table tbody tr:hover{
+
+    background:rgba(214,179,106,.06);
+
+}
+
+
+/* ==========================
+      TABLE IMAGE
+========================== */
+
+.table-avatar{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+/* ==========================
+      TABLE NAME
+========================== */
+
+.table-user{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+}
+
+.table-user h5{
+
+    font-size:15px;
+    font-weight:600;
+
+}
+
+.table-user span{
+
+    font-size:13px;
+    color:var(--text-muted);
+
+}
+
+
+/* ==========================
+        STATUS
+========================== */
+
+.status{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:7px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+    font-weight:600;
+
+}
+
+.status-success{
+
+    background:rgba(34,197,94,.15);
+    color:var(--success);
+
+}
+
+.status-warning{
+
+    background:rgba(245,158,11,.15);
+    color:var(--warning);
+
+}
+
+.status-danger{
+
+    background:rgba(239,68,68,.15);
+    color:var(--danger);
+
+}
+
+.status-info{
+
+    background:rgba(59,130,246,.15);
+    color:var(--info);
+
+}
+
+
+/* ==========================
+      ACTION BUTTONS
+========================== */
+
+.table-buttons{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.table-btn{
+
+    width:40px;
+    height:40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:#181C20;
+
+    border:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+.table-btn:hover{
+
+    border-color:var(--primary);
+
+    color:var(--primary);
+
+    transform:translateY(-2px);
+
+}
+
+.table-btn.delete:hover{
+
+    border-color:var(--danger);
+
+    color:var(--danger);
+
+}
+
+
+/* ==========================
+      NO DATA
+========================== */
+
+.table-empty{
+
+    text-align:center;
+
+    padding:70px 30px;
+
+    color:var(--text-muted);
+
+}
+
+.table-empty i{
+
+    font-size:58px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+    display:block;
+
+}
+/* ==========================
+   TEXT ACTION BUTTONS
+   (for Edit/Delete/Applicants links with text labels,
+   as opposed to .table-btn which is icon-only 40x40)
+========================== */
+
+.table-action{
+display:inline-flex;
+align-items:center;
+gap:6px;
+padding:8px 16px;
+border-radius:10px;
+background:#181C20;
+border:1px solid var(--border);
+color:var(--text-light);
+font-size:13px;
+font-weight:600;
+transition:var(--transition);
+margin-right:6px;
+}
+
+.table-action:hover{
+border-color:var(--primary);
+color:var(--primary);
+transform:translateY(-2px);
+}
+
+.table-action.delete{
+background:rgba(239,68,68,.1);
+border-color:rgba(239,68,68,.25);
+color:#F87171;
+}
+
+.table-action.delete:hover{
+border-color:var(--danger);
+background:rgba(239,68,68,.16);
+color:#F87171;
+}

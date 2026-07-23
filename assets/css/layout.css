@@ -1,0 +1,504 @@
+/* ==========================================================
+   CAREERCONNECT
+   LAYOUT SYSTEM
+========================================================== */
+
+
+/* =========================
+   APP LAYOUT
+========================= */
+
+.app{
+
+display:flex;
+min-height:100vh;
+background:var(--bg);
+
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:270px;
+height:100vh;
+
+background:var(--sidebar);
+
+border-right:1px solid var(--border);
+
+display:flex;
+flex-direction:column;
+
+padding:28px 20px;
+
+overflow-y:auto;
+
+z-index:1000;
+
+transition:var(--transition);
+
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+gap:12px;
+
+margin-bottom:45px;
+
+}
+
+.logo i{
+
+font-size:32px;
+
+color:var(--primary);
+
+}
+
+.logo h2{
+
+font-size:26px;
+
+font-weight:700;
+
+color:var(--white);
+
+}
+
+.logo span{
+
+color:var(--primary);
+
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.sidebar-menu{
+
+display:flex;
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.sidebar-menu a{
+
+display:flex;
+align-items:center;
+
+gap:15px;
+
+padding:14px 18px;
+
+border-radius:var(--radius);
+
+font-size:15px;
+font-weight:500;
+
+color:var(--text-light);
+
+transition:var(--transition);
+
+}
+
+.sidebar-menu a i{
+
+font-size:20px;
+width:24px;
+text-align:center;
+
+}
+
+.sidebar-menu a:hover{
+
+background:rgba(214,179,106,.12);
+
+color:var(--primary);
+
+transform:translateX(5px);
+
+}
+
+.sidebar-menu a.active{
+
+background:var(--primary);
+
+color:#121417;
+
+font-weight:600;
+
+}
+
+.sidebar-menu a.active i{
+
+color:#121417;
+
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main{
+
+margin-left:270px;
+
+width:calc(100% - 270px);
+
+padding:28px;
+
+min-height:100vh;
+
+}
+
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:35px;
+
+gap:25px;
+
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box{
+
+width:420px;
+
+height:52px;
+
+display:flex;
+align-items:center;
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+border-radius:var(--radius);
+
+padding:0 18px;
+
+transition:var(--transition);
+
+}
+
+.search-box:focus-within{
+
+border-color:var(--primary);
+
+}
+
+.search-box i{
+
+font-size:18px;
+
+color:var(--text-muted);
+
+margin-right:12px;
+
+}
+
+.search-box input{
+
+width:100%;
+
+background:none;
+
+border:none;
+
+color:var(--white);
+
+font-size:15px;
+
+}
+
+.search-box input::placeholder{
+
+color:var(--text-muted);
+
+}
+
+
+/* =========================
+   RIGHT
+========================= */
+
+.top-right{
+
+display:flex;
+
+align-items:center;
+
+gap:16px;
+
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-mini{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+padding:8px 14px;
+
+border-radius:var(--radius);
+
+cursor:pointer;
+
+transition:var(--transition);
+
+}
+
+.profile-mini:hover{
+
+border-color:var(--primary);
+
+}
+
+.user-avatar{
+
+width:46px;
+height:46px;
+
+border-radius:50%;
+
+background:var(--primary);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:18px;
+
+font-weight:700;
+
+color:#121417;
+
+}
+
+.profile-info h5{
+
+font-size:15px;
+
+font-weight:600;
+
+margin-bottom:2px;
+
+}
+
+.profile-info span{
+
+font-size:13px;
+
+color:var(--text-muted);
+
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.page-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:28px;
+
+}
+
+.page-header h1{
+
+font-size:32px;
+
+font-weight:700;
+
+color:var(--white);
+
+}
+
+.page-header p{
+
+color:var(--text-muted);
+
+margin-top:5px;
+
+}
+
+/* ==========================================
+   SIDEBAR FOOTER
+========================================== */
+
+.sidebar-footer{
+
+    margin-top:auto;
+
+    padding-top:25px;
+
+    border-top:1px solid var(--border);
+
+}
+
+.sidebar-footer .logout-btn{
+
+    width:100%;
+
+}
+
+.logo small{
+
+    color:var(--text-muted);
+
+    font-size:13px;
+
+    display:block;
+
+    margin-top:2px;
+
+}
+
+/* ==========================================
+   PROFILE DROPDOWN
+========================================== */
+
+.profile-mini{
+
+    position:relative;
+
+}
+
+.notify-dot{
+
+    position:absolute;
+
+    width:9px;
+
+    height:9px;
+
+    border-radius:50%;
+
+    background:#ef4444;
+
+    top:12px;
+
+    right:12px;
+
+}
+
+.profile-dropdown{
+
+    position:absolute;
+
+    top:70px;
+
+    right:0;
+
+    width:240px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+    padding:10px;
+
+    display:none;
+
+    z-index:1000;
+
+}
+
+.profile-dropdown.show{
+
+    display:block;
+
+}
+
+.profile-dropdown a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.profile-dropdown a:hover{
+
+    background:rgba(214,179,106,.12);
+
+    color:var(--primary);
+
+}
+
+.profile-dropdown hr{
+
+    border:none;
+
+    border-top:1px solid var(--border);
+
+    margin:10px 0;
+
+}
